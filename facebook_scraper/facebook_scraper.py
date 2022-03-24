@@ -14,30 +14,30 @@ import os
 from requests import RequestException
 from requests_html import HTMLSession
 
-from . import utils
-from .constants import (
+import utils
+from constants import (
     DEFAULT_PAGE_LIMIT,
     FB_BASE_URL,
     FB_MOBILE_BASE_URL,
     FB_W3_BASE_URL,
     FB_MBASIC_BASE_URL,
 )
-from .extractors import (
+from extractors import (
     extract_group_post,
     extract_post,
     extract_photo_post,
     PostExtractor,
     extract_hashtag_post,
 )
-from .fb_types import Post, Profile
-from .page_iterators import (
+from fb_types import Post, Profile
+from page_iterators import (
     iter_group_pages,
     iter_pages,
     iter_photos,
     iter_search_pages,
     iter_hashtag_pages,
 )
-from . import exceptions
+import exceptions
 
 
 logger = logging.getLogger(__name__)

@@ -12,7 +12,7 @@ from requests.cookies import RequestsCookieJar
 from requests_html import DEFAULT_URL, Element, PyQuery
 import json
 
-from . import exceptions
+import exceptions
 import logging
 import time
 
